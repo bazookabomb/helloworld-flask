@@ -22,6 +22,17 @@ def hello():
 def kurs():
     return "<p>Hallo Kurs 25-01</p>"
 
+# about route
+@app.route('/about')
+def about():
+    return """<p>Über uns: </p>
+    <p>Der Kurs mag Hunde</p>"""
+
+# info route
+@app.route('/info')
+def info():
+    return """<p>Info: </p>
+    <p>auch Katzen!</p>"""
 
 if __name__ == "__main__":
     app.run(debug=True)
